@@ -1,0 +1,64 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ## Dates and Time
+
+# In[22]:
+
+
+import datetime as dt
+import time as tm
+
+
+# In[23]:
+
+
+tm.time()
+
+
+# In[25]:
+
+
+# date time using timestamp 
+dtnow = dt.datetime.fromtimestamp(tm.time())
+dtnow
+
+
+# In[27]:
+
+
+dtnow.year , dtnow.month, dtnow.day
+
+
+# ### Time Delta
+
+# In[28]:
+
+
+delta = dt.timedelta(days = 100)
+delta
+
+
+# In[30]:
+
+
+today = dt.date.today()
+
+
+# In[31]:
+
+
+today - delta
+
+
+# In[32]:
+
+
+today> today - delta
+
+
+# In[ ]:
+
+
+
+
