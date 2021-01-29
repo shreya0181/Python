@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ## Python Objects and map()
+
+# In[7]:
+
+
+class Person:
+   department = 'School of Information' 
+   def set_name (self, new_name):
+#     instance bound variations
+      self.name = new_name;
+        
+   def set_location (self, new_location):
+       self.location= new_location
+
+
+# In[9]:
+
+
+person = Person()
+person.set_name('Chritopher Brooks')
+person.set_location('Ann Arbour')
+print('{} lives in {} and works in {}'.format(person.name, person.location, person.department))
+
+
+# In[10]:
+
+
+store1 = [10.00, 12.0, 59.7, 34.3]
+store2 = [4.6, 7.0, 6.7, 90.3, 7.2]
+cheapset = map(min, store1, store2)
+
+cheapset
+
+
+# In[ ]:
+
+
+
+
